@@ -1,0 +1,32 @@
+.imagem-com-hover {
+  position: relative;
+  display: inline-block;
+}
+
+/* Estilo para o texto do hover */
+.hover-text {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 5px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+/* Exibir o texto do hover quando o mouse passa sobre a imagem */
+.imagem-com-hover:hover .hover-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 425px) {
+  .hover-text {
+    bottom: 50px;
+    font-size: .75rem;
+  }
+}

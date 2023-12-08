@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./src/css/navbar.css" />
+  <link rel="stylesheet" type="text/css" href="./src/css/historia.css" />
+  <link rel="stylesheet" type="text/css" href="./src/css/footer.css" />
+  <link rel="stylesheet" type="text/css" href="./src/css/sobre.css" />
+  <link rel="stylesheet" type="text/css" href="./src/css/scrollTop.css" />
+  <link rel="stylesheet" type="text/css" href="./src/css/increase.css" />
+  <link rel="stylesheet" type="text/css" href="./src/css/sintetizador.css" />
+  <link rel="stylesheet" type="text/css" href="./src/css/passo.css" />
+  <link rel="stylesheet" type="text/css" href="./src/css/referencias.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"
+    integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://kit.fontawesome.com/ebbc1aa60f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <title>PreservaTeen</title>
+</head>
+
+<body>
+  <nav>
+    <header>
+      <div class="logo_text">
+        <span>
+          <img src='.\src/images/camisinha_logo.jpeg' class="mr-cam" id="mr-camisinha"
+            style="height: 50px; width: 50px; background-color: transparent;">
+          <p>PreservaTeen</p>
+        </span>
+      </div>
+
+      <ul class="navigation">
+        <li><a href="home.html" class="white">Home</a></li>
+        <li><a href="index.html" class="blue">História</a></li>
+        <li><a href="comousar.html" class="pink">Preservativos</a>
+          <ul class="dropdown-content preservativo">
+            <li><a href="comousar.html" class="pink">Como Usar</a>
+            <li><a href="jogo.html" class="grey"> Jogo</a></li>
+            <li><a href="comousar.html#ondeconseguir" class="green">Onde conseguir?</a></li>
+          </ul>
+        </li>
+        <li><a href="ist.html" class="yellow">IST'S</a></li>
+        <li>
+        <li><a href="intervencao.html" class="purple-t"><i class="fa-solid fa-ellipsis"></i></a>
+          <ul class="dropdown-content inter">
+            <li><a href="cartilha.html" class="green-t">Cartilha</a></li>
+            <li><a href="hq.html" class="pink">HQ</a></li>
+            <li><a href="intervencao.html" class="blue">Intervenção</a></li>
+            <li><a href="faq.html" class="ciano-t">FAQ</a></li>
+            <li><a href="referencias.html" class="green">Mais</a></li>
+          </ul>
+        </li>
+
+      </ul>
+      <div class="hamburger">
+        <i class="fa-solid fa-bars on" id="on"></i>
+      </div>
+      <div class="alert">
+        <ul class="navigation1">
+          <i class='bx bxs-x-circle close'></i>
+          <li><a href="home.html" class="white">
+              <p>Home</p>
+            </a></li>
+          <li><a href="index.html" class="blue">
+              <p>História</p>
+            </a></li>
+          <li><a href="comousar.html" class="pink">
+              <p>Como Usar</p>
+            </a>
+          <li><a href="jogo.html" class="grey">
+              <p>Jogo</p>
+            </a></li>
+          <li><a href="comousar.html#ondeconseguir" class="green">
+              <p>Onde conseguir?</p>
+            </a></li>
+          </li>
+          <li><a href="ist.html" class="yellow">
+              <p>IST'S</p>
+            </a></li>
+          <li><a href="intervencao.html" class="purple-t">
+              <p>Intervenção</p>
+            </a></li>
+          <li><a href="cartilha.html" class="green-t">
+              <p>Cartilha</p>
+            </a></li>
+          <li><a href="hq.html" class="ciano-t">
+              <p>HQ</p>
+            </a></li>
+          </li>
+          <li><a href="faq.html" class="orange">
+              <p>FAQ</p>
+            </a></li>
+          <li><a href="referencias.html" class="green">Mais</a></li>
+
+        </ul>
+
+      </div>
+      <div class="light-mode">
+        <input type="checkbox" class="checkbox" id="chk" />
+        <label class="label" for="chk">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <div class="ball"></div>
+        </label>
+      </div>
+
+    </header>
+
+  </nav>
+
+  <main>
+    <div class="curio-line">
+      <h1 class="howUse">Leituras</h1>
+      <div class="ouca">
+        <button type="button" class="play">
+          <p>ouça aqui</p>
+          <i class="fa-solid fa-play" id="play"></i>
+          <i class="fa-solid fa-pause" id="pause"></i>
+        </button>
+      </div>
+      <div class="aumentar">
+        <div class="bts">
+          <button onclick="FontSize('increase')">
+            <p>A+ </p>
+          </button>
+          <button onclick="FontSize('decrease')">
+            <p>
+              A-
+            </p>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="txt" class="p">
+
+      <div class="cont-hist">
+        <div class="historia">
+          <p> Ao longo dos meses dedicados à pesquisa para aprimorar a estrutura do nosso projeto, deparamo-nos com uma
+            variedade de materiais de estudo relacionados ao tema "Preservativos e IST'S. Além de consultar nossas
+            principais refêrencias, incorporamos alguns artigos e vídeos que abordam especificamente os tópicos
+            explorados pelo grupo. Acreditamos que esses recursos fornecem informações valiosas para quem procura
+            compreender melhor essa questão crucial nos dias atuais.</p>
+        </div>
+      </div>
+
+      <div class="card-container refe">
+        <div class="card" style="width: 18rem;">
+          <img src="./src/images/referencias/refe1.png" class="card-img-top" alt="Print do artigo">
+          <div class="card-body">
+            <h3 class="card-title abaixar">Reflexões sobre vulnerabilidade dos adolescentes a infecções sexualmente
+              transmissíveis</h3>
+            <div class="btn-cont">
+              <a href="https://periodicos.unifap.br/index.php/pracs/article/view/1668" class="btn-primary"
+                target="_blank">Saiba Mais</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="./src/images/referencias/refe2.png" class="card-img-top" alt="Print do artigo">
+          <div class="card-body">
+            <h3 class="card-title">Projeto de intervenção em educação sexual com educadoras e alunos de uma pré-escola
+            </h3>
+            <div class="btn-cont">
+              <a href="https://repositorio.unesp.br/items/fb45d151-ba6f-47db-8aa0-1145f7a2533d" class="btn-primary"
+                target="_blank">Saiba Mais</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="card-container">
+        <div class="card" style="width: 18rem;">
+          <img src="./src/images/referencias/refe3.png" class="card-img-top" alt="Print do artigo">
+          <div class="card-body">
+            <h3 class="card-title">Sexos, sexualidades e gêneros: monstruosidades no currículo da Educação Sexual</h3>
+            <div class="btn-cont">
+              <a href="https://www.scielo.br/j/edur/a/5nNjC3xKQxqKZMXVLFRdQdh/?lang=pt&format=pdf" class="btn-primary"
+                target="_blank">Saiba Mais</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card" style="width: 18rem;">
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/J1rKwrj7y0s">
+          </iframe>
+
+          <div class="card-body">
+            <h3 class="card-title">RESUMO Sobre os Métodos Contraceptivos | Ciências com William</h3>
+            <div class="btn-cont">
+              <a href="https://www.youtube.com/watch?v=J1rKwrj7y0s" class="btn-primary" target="_blank">Saiba
+                Mais</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="card-container">
+
+        <div class="card" style="width: 18rem;">
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/P7i2cZZiiz8">
+          </iframe>
+          <div class="card-body">
+            <h3 class="card-title">Drauzio responde as principais dúvidas sobre ISTs | Comentando comentários</h3>
+            <div class="btn-cont">
+              <a href="https://youtu.be/P7i2cZZiiz8?si=B6mhpcIn1BCU5YPT" class="btn-primary" target="_blank">Saiba
+                Mais</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/cpnAFgDmmkU">
+          </iframe>
+          <div class="card-body">
+            <h3 class="card-title">AIDS NA ADOLESCÊNCIA | PAIS E FILHOS</h3>
+            <div class="btn-cont">
+              <a href="https://youtu.be/cpnAFgDmmkU?si=5n8ON5zuxUpUtw5Y" class="btn-primary" target="_blank">Saiba
+                Mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="titulo-refe">
+        <h2>Referências Bibliográficas</h2>
+      </div>
+      <div class="card-container refe">
+        <div class="card" style="width: 18rem;">
+          <img src="./src/images/referencias/relatorio intervencao.png" class="card-img-top" alt="Print do artigo">
+          <div class="card-body">
+            <h3 class="card-title abaixar">Relatório da Intervenção</h3>
+            <div class="btn-cont">
+              <a href="./src/docs/RELATÓRIO DA INTERVENÇÃO.pdf" class="btn-primary" target="_blank"
+                download="RELATÓRIO DA INTERVENÇÃO">Saiba Mais</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    </div>
+    <article>
+      <button class="scrollTop" onclick="backTop()">
+        <img src="src/images/chevron.svg" alt="voltar">
+      </button>
+    </article>
+
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget();
+    </script>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <h3>PreservaTeen</h3>
+      <p>Esse site é um projeto feito para as matérias de Estudos Avançados em Ciências da Natureza e Laboratórios de
+        Processos Criativos que visa informar e conscientizar o público jovem.</p>
+      <div class="lgtv">
+        <img
+          src="https://s2.glbimg.com/aPPFcq_RGl0Wd1K-6UiFZlJlUWs=/e.glbimg.com/og/ed/f/original/2021/06/10/bandeira_lgbt.png"
+          alt="bandeira LGBTQIAPN+">
+        <p class="happy">Happy Pride Month ❤️</p>
+        <div class="top">
+          <a class="topic" href="sobre.html">Sobre nós</a>
+          <a class="topic" href="fale-conosco.html">Fale conosco</a>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright &copy; 2023. Desenvolvido por <span>Gabrielly</span> e <span>Nicolas</span></p>
+    </div>
+  </footer>
+  <script src="./src/js/script.js"> </script>
+  <script src="./src/js/animacao-sobre.js"> </script>
+  <script src="https://kit.fontawsome.com/998c60ef77.js" crossorigin="anonymous"></script>
+  <script src="./src/js/lightmode.js"></script>
+  <script src="./src/js/navbar.js"></script>
+  <script src="./src/js/increase.js"></script>
+  <script src="./src/js/sintetizador.js"></script>
+
+</body>
+
+</html>

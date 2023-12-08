@@ -1,0 +1,164 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+ :root {
+   --color-letras-hover: #1b1b1b;
+   --color-letras: #fff;
+   --botao-color-hover: ;
+   --cor-fundo: #000;
+   --fonte-letra: 'Poppins', sans serif;
+   --cor-light-mode: #BF455B;
+ }
+
+ body {
+   color: var(--color-letras);
+   font-family: var(--fonte-letra);
+   overflow-x: hidden;
+   transition: background 0.2s linear;
+   width: 100vw;
+   /* background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+ }
+
+ .cont-title span p {
+   margin: 0 auto;
+   /* font-family: var(--fonte-letra); */
+ }
+
+ .logo_text span h1 {
+   text-transform: uppercase;
+   -webkit-background-clip: text;
+   margin: 0 auto;
+   background-clip: text;
+   color: white;
+   -webkit-text-fill-color: transparent;
+   background-color: #FFF;
+   background-image: -webkit-gradient(linear, left top, right top, from(#FF0018), to(#FD9E1E));
+   background-image: -webkit-linear-gradient(left, #FF0018, #FD9E1E, #FBFF41, #0064F9, #86007D);
+   background-image: -moz-linear-gradient(left, #FF0018, #FD9E1E, #FBFF41, #0064F9, #86007D);
+   background-image: -ms-linear-gradient(left, #FF0018, #FD9E1E, #FBFF41, #0064F9, #86007D);
+   background-image: -o-linear-gradient(left, #FF0018, #FD9E1E, #FBFF41, #0064F9, #86007D);
+   text-align: center;
+   font-size: 60px;
+ }
+
+ h2,
+ h3,
+ h4,
+ h5 {
+   font-weight: 900;
+ }
+
+ main {
+   display: block;
+   /* background-color: black; 
+  opacity: 60%;
+  height: 100vh; */
+ }
+
+ .text-container {
+   width: 100%;
+   max-width: 760px;
+   margin: 0 auto;
+   padding: 0 20px;
+ }
+
+ section.module p {
+   margin-bottom: 40px;
+   text-align: justify;
+ }
+
+ /* section.module:last-child{
+  margin-bottom: 0;
+} */
+
+ .home-h2 {
+   background-color: #1b1b1b;
+   text-align: center;
+ }
+
+ section.module h2 {
+   margin-bottom: 40px;
+   font-size: 30px;
+ }
+
+ section.module.content {
+   margin-top: 2rem;
+   padding: 40px 0;
+ }
+
+ section.module.parallax {
+   width: 100%;
+   display: flex;
+   overflow: hidden;
+   position: relative;
+   flex-direction: column;
+   justify-content: center;
+   height: 100vh !important;
+   background-position: 50% 50%;
+   background-repeat: no-repeat;
+   background-image: url(../src/images/fundo-home.png);
+   background-attachment: fixed;
+   background-size: cover;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   -ms-background-size: cover;
+   align-items: center;
+   text-align: center;
+ }
+
+ section.module.parallax:after {
+   content: "";
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   z-index: 8;
+   background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);
+   background: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);
+   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);
+ }
+
+ section.module.parallax h1 {
+   font-size: 78px;
+   z-index: 50;
+   text-transform: uppercase;
+ }
+
+ @media screen and (max-width: 800px) {
+   .module .text-container p {
+     font-size: 1rem;
+   }
+
+   .module.content {
+     padding: 0px 20px 0px 20px;
+     position: relative;
+     left: 0.5rem;
+   }
+ }
+
+ @media screen and (max-width: 780px) {
+   section.module.parallax h1 {
+     font-size: 2.8rem;
+   }
+
+   .section.module h2 {
+     font-size: 2rem;
+   }
+ }
+
+ @media screen and (max-width: 450px) {
+   section.module.parallax h1 {
+     font-size: 2.5rem;
+   }
+
+   .section.module h2 {
+     font-size: 1.6rem;
+   }
+ }

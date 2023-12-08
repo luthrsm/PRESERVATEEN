@@ -1,0 +1,57 @@
+/* BOTÃO SCROLLTOP */
+.scrollTop {
+  border: 0;
+  opacity: 0;
+  width: 60px;
+  right: 30px;
+  height: 60px;
+  bottom: 30px;
+  z-index: 999;
+  display: flex;
+  outline: none;
+  position: fixed;
+  cursor: pointer;
+  visibility: hidden;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  transition: all .4s ease;
+  /* background-color: #fff; */
+  box-shadow: 3px 3px 10px var(--rosa);
+  fill: invert(1);
+}
+
+.scrollTop.active {
+  opacity: 1;
+  visibility: visible;
+  transition: aparecer .4s ease;
+  background-color: #D9583B;
+  /* background-color: #181818; */
+  box-shadow: 3px 3px 10px #45484f;
+  fill: invert(-1);
+}
+
+.scrollTop.active img {
+  fill: invert(1);
+}
+
+.scrollTop img {
+  width: 80%;
+}
+
+.scrollTop:hover {
+  bottom: 40px;
+  transition: all .4s ease;
+}
+
+.scrollTop:hover img {
+  fill: invert(1);
+  -webkit-filter: invert(1);
+}
+
+@media screen and (max-width: 425px) {
+  .scrollTop {
+    width: 50px;
+    height: 50px;
+  }
+}

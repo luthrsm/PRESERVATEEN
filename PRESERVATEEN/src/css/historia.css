@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --color-letras-hover: #1b1b1b;
+  --color-letras: #fff;
+  --botao-color: ;
+  --botao-color-hover: ;
+  --cor-fundo: #000;
+  --fonte-letra: 'Poppins', 'sans serif';
+  --cor-rosa: #BF455B;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cont-hist {
+  width: 100vw;
+  margin: auto;
+  max-width: 900px;
+  display: block;
+  font-family: 'Poppins', sans serif;
+}
+
+.cont-hist div {
+  margin: auto;
+}
+
+.cont-hist h1 {
+  font-size: 36px;
+  color: var(--color-letras);
+  margin-top: 2.5rem;
+}
+
+.cont-hist p {
+  margin-top: 2em;
+  text-align: justify;
+  letter-spacing: 1px;
+  font-family: var(--fonte-letra);
+}
+
+.home-foto1 {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+}
+
+.home-foto1 img {
+  margin-top: 1rem;
+  width: 330px;
+  height: 200px;
+  object-fit: fill;
+}
+
+.home-foto1 figcaption {
+  font-size: 0.8rem;
+}
+
+.home-foto1 .box {
+  border-radius: 30px;
+}
+
+.home-foto1 .creater {
+  margin-top: 1rem;
+  width: 250px;
+  height: 240px;
+  border-radius: 30px;
+}
+
+.home-foto1 .camisinha-gov {
+  margin-top: 1rem;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.curiosidades-curi {
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.curiosidades .curio-line {
+  width: 100%;
+  margin: auto;
+}
+
+.curiosidades .curio-line h2 {
+  margin-top: 1.5rem;
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+.curio-line {
+  border-bottom: 0.3rem solid #BF8845;
+  width: 50%;
+}
+
+.curiosidades ol div {
+  width: 50%;
+}
+
+.curiosidades ol div li {
+  margin-bottom: 1rem;
+}
+
+.curiosidades ol {
+  display: flex;
+  margin-top: 1.3rem;
+  width: 100%;
+  gap: 2rem;
+}
+
+/* DROPDOWN CURIOSIDADES */
+.container-faq {
+  max-width: 100%;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.titulo-faq h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 10px;
+  margin-top: 2.5rem;
+}
+
+.perguntas,
+.goask {
+  background-color: #747F8D;
+  color: #ebebeb;
+  cursor: pointer;
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 2rem 2.5rem;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  text-align: left;
+}
+
+.perguntas i,
+goask i {
+  font-size: 1.6rem;
+}
+
+.perguntas i:hover,
+.goask i:hover {
+  color: #ebebeb;
+}
+
+.perguntas:hover,
+.goask:hover {
+
+  color: black;
+  transition: all 1.5s ease-out;
+}
+
+.resposta {
+  overflow: hidden;
+  background-color: #AFB5BD;
+  padding: 0 2rem 2.5rem 2rem;
+  display: none;
+}
+
+.resposta img {
+  width: 100%;
+  height: 50%;
+}
+
+.resposta p {
+  color: black;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+.resposta h1 {
+  color: black;
+}
+
+.faq,
+.askUS {
+  margin: auto;
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.perguntas.active {
+  background-color: #AFB5BD;
+  transition: all 1.5s ease-out;
+  color: black;
+}
+
+.faq.active {
+  border: none;
+}
+
+.askUS a {
+  text-decoration: none;
+}
+
+
+
+
+/* QUIMICA E BIOLOGIA */
+
+.compostos {
+  padding-top: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+
+  .container-faq {
+    margin-top: 100px;
+  }
+
+  .titulo-faq h2 {
+    font-size: 45px;
+  }
+
+  .perguntas,
+  .goask {
+    width: 100% !important;
+    font-size: 15px;
+    border: none;
+  }
+
+  .perguntas i,
+  .goask i {
+    font-size: 15px;
+  }
+
+  .resposta {
+    width: 100% !important;
+    padding-top: 7px;
+  }
+
+  .resposta p {
+    font-size: 13px;
+
+  }
+}
+
+@media screen and (max-width: 425px) {
+
+  .perguntas,
+  .goask,
+  .resposta {
+    width: 21.875rem !important;
+    margin-left: -4rem;
+  }
+
+  .perguntas,
+  .goask {
+    font-size: 0.8rem;
+  }
+
+  .perguntas i,
+  .goask i {
+    font-size: 15px;
+  }
+
+  .container-faq {
+    margin: .125rem !important;
+  }
+
+  .ouca {
+    top: -10% !important;
+  }
+}
+
+@media screen and (max-width: 375px) {
+
+  .perguntas,
+  .goask,
+  .resposta {
+    width: 20rem !important;
+    margin-left: -4rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .perguntas,
+  .goask,
+  .resposta {
+    width: 18rem !important;
+    font-size: .75rem;
+    margin-left: -4rem;
+  }
+
+  .resposta p {
+    font-size: .7rem;
+  }
+}
+
+/* CONTAINER HISTORIA NORMAL */
+
+@media screen and (max-width: 888px) {
+  .cont-hist p {
+    font-size: 1rem;
+    padding: 0px 20px 0px 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cont-hist p {
+    font-size: 1rem;
+    padding: 0px 20px 0px 20px;
+  }
+
+  .cont-hist {
+    padding: 10px;
+    position: relative;
+    left: 0.5rem;
+  }
+
+  .curiosidades {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .home-foto1 {
+    display: block;
+    align-items: center;
+  }
+
+  .home-foto1 figure {
+    margin-left: 20px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:425px) {
+  .cont-hist {
+    padding: 10px;
+    position: relative;
+    left: -0.25rem;
+    right: 0.25rem;
+    font-size: 10px;
+  }
+
+  .curio-text ol {
+    display: block;
+  }
+
+  .curio-text ol div li {
+    width: 100%;
+    font-size: 0.9rem;
+    text-align: justify;
+  }
+
+  .home-foto1 .box {
+    width: 200px;
+    height: 150px;
+  }
+
+  .home-foto1 .creater {
+    width: 150px;
+    height: 180px;
+  }
+
+  .home-foto1 .camisinha-gov {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .cont-hist {
+    padding: 5px;
+    position: relative;
+    left: 0.25rem;
+    right: 0.25rem;
+    width: 100%;
+  }
+
+  .historia p {
+    padding: 10px;
+    font-size: .8rem;
+  }
+}

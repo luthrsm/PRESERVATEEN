@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="imagex/png" href="./src/images/camisinha_logo.jpeg">
+  <!-- <link rel="stylesheet" type="text/css" href="./src/css/style.css" /> -->
+  <link rel="stylesheet" type="text/css" href="./src/css/navbar.css" />
+  <link rel="stylesheet" type="text/css" href="./src/css/scrollTop.css" />
+  <link rel="stylesheet" type="text/css" href="./src/css/historia.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="./src/css/home.css" /> -->
+  <link rel="stylesheet" type="text/css" href="./src/css/footer.css" />
+  <link rel="stylesheet" type="text/css" href="./src/css/increase.css" />
+  <link rel="stylesheet" type="text/css" href="./src/css/sintetizador.css" />
+  <link rel="stylesheet" type="text/css" href="./src/css/passo.css" />
+  <link rel="stylesheet" type="text/css" href="./src/css/descricao.css" />
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"
+    integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://kit.fontawesome.com/ebbc1aa60f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>PreservaTeen</title>
+
+  <style>
+    a {
+      color: #D9583B;
+    }
+
+    a:hover {
+      color: #e86041;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <header>
+      <div class="logo_text">
+        <span>
+          <img src='.\src/images/camisinha_logo.jpeg' class="mr-cam" id="mr-camisinha"
+            style="height: 50px; width: 50px; background-color: transparent;">
+          <p>PreservaTeen</p>
+        </span>
+      </div>
+
+      <ul class="navigation">
+        <li><a href="home.html" class="white">Home</a></li>
+        <li><a href="index.html" class="blue">História</a></li>
+        <li><a href="comousar.html" class="pink">Preservativos</a>
+          <ul class="dropdown-content preservativo">
+            <li><a href="comousar.html" class="pink">Como Usar</a>
+            <li><a href="jogo.html" class="grey"> Jogo</a></li>
+            <li><a href="comousar.html#ondeconseguir" class="green">Onde conseguir?</a></li>
+          </ul>
+        </li>
+        <li><a href="ist.html" class="yellow">IST'S</a></li>
+        <li>
+        <li><a href="intervencao.html" class="purple-t"><i class="fa-solid fa-ellipsis"></i></a>
+          <ul class="dropdown-content inter">
+            <li><a href="cartilha.html" class="green-t">Cartilha</a></li>
+            <li><a href="hq.html" class="pink">HQ</a></li>
+            <li><a href="intervencao.html" class="blue">Intervenção</a></li>
+            <li><a href="faq.html" class="ciano-t">FAQ</a></li>
+            <li><a href="referencias.html" class="green">Mais</a></li>
+          </ul>
+        </li>
+
+      </ul>
+      <div class="hamburger">
+        <i class="fa-solid fa-bars on" id="on"></i>
+      </div>
+      <div class="alert">
+        <ul class="navigation1">
+          <i class='bx bxs-x-circle close'></i>
+          <li><a href="home.html" class="white">
+              <p>Home</p>
+            </a></li>
+          <li><a href="index.html" class="blue">
+              <p>História</p>
+            </a></li>
+          <li><a href="comousar.html" class="pink">
+              <p>Como Usar</p>
+            </a>
+          <li><a href="jogo.html" class="grey">
+              <p>Jogo</p>
+            </a></li>
+          <li><a href="comousar.html#ondeconseguir" class="green">
+              <p>Onde conseguir?</p>
+            </a></li>
+          </li>
+          <li><a href="ist.html" class="yellow">
+              <p>IST'S</p>
+            </a></li>
+          <li><a href="intervencao.html" class="purple-t">
+              <p>Intervenção</p>
+            </a></li>
+          <li><a href="cartilha.html" class="green-t">
+              <p>Cartilha</p>
+            </a></li>
+          <li><a href="hq.html" class="ciano-t">
+              <p>HQ</p>
+            </a></li>
+          </li>
+          <li><a href="faq.html" class="orange">
+              <p>FAQ</p>
+            </a></li>
+          <li><a href="referencias.html" class="green">Mais</a></li>
+
+        </ul>
+
+      </div>
+      <div class="light-mode">
+        <input type="checkbox" class="checkbox" id="chk" />
+        <label class="label" for="chk">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <div class="ball"></div>
+        </label>
+      </div>
+
+    </header>
+
+  </nav>
+  <main>
+    <div class="curio-line">
+      <h1 class="howUse">HISTÓRIA</h1>
+      <div class="ouca">
+        <button type="button" class="play">
+          <p>ouça aqui</p>
+          <i class="fa-solid fa-play" id="play"></i>
+          <i class="fa-solid fa-pause" id="pause"></i>
+        </button>
+      </div>
+      <div class="aumentar">
+        <div class="bts">
+          <button onclick="FontSize('increase')">
+            <p>A+ </p>
+          </button>
+          <button onclick="FontSize('decrease')">
+            <p>
+              A-
+            </p>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="cont-hist">
+      <div class="historia">
+        <div id="txt" class="increase">
+          <p> Estudos indicam que a primeira versão da camisinha tenha sido criada há mais de três mil anos atrás, pelos
+            chineses. A partir da combinação de papel de seda e óleos lubrificantes. </p>
+          <div class="home-foto1">
+            <div class="imagem-com-hover">
+              <figure>
+                <img src='./src/images/primeira-camisinha.jpeg' class="box" alt="Foto da primeira camisinha"
+                  class="camisinha" />
+                <div class="hover-text" style="bottom: 25px !important;">Camisinha feita de couro de animais. Caixa
+                  vermelha com várias camisinhas.
+                </div>
+                <figcaption>Fonte: <a href="https://issuu.com"> https://issuu.com</a></figcaption>
+              </figure>
+            </div>
+            <p class="home-p"> Em meados da Idade Média e da Idade Moderna, houve a utilização de envoltórios penianos
+              produzidos com linho. Além disso, recomendava-se a aplicação de substâncias supostamente medicinais, como
+              por exemplo, chás de erva, absinto, urina, partes sexuais de animais - considerados como forma de
+              prevenção contra a “sífilis”. </p>
+          </div>
+          <div class="home-foto1">
+            <p class="home-p"> No século XVIII, as liberdades da Revolução Francesa e as promessas caóticas da teoria
+              malthusiana, serviram para que os preservativos fossem fabricados e comercializados em maior escala. Ao
+              longo do século XIX, a descoberta dos usos da borracha e o processo de vulcanização (Charles Goodyear)
+              permitiram que as camisinhas fossem mais resistentes e maleáveis. No entanto, algumas farmácias da época
+              comercializavam o produto de forma reaproveitável, com a garantia de cinco anos. </p>
+            <div class="imagem-com-hover">
+              <figure>
+                <img src='./src/images/Charles.jpeg' class="creater"
+                  alt="Responsável pelo processo de vulcanização da camisinha Charles Goodyear" />
+                <div class="hover-text" style="bottom: 43px !important;">Retrato de Charles Goodyear, criador do
+                  processo de vulcanização.
+                </div>
+
+                <figcaption>Fonte: <a href="https://snl.no/Charles_Goodyear">https://snl.no/Charles_Goodyear</a>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="home-foto1 redonda">
+            <div class="imagem-com-hover">
+              <figure>
+                <img src='./src/images/camisinha_atual.jpeg' class="camisinha-gov" alt="Camisinhas nos dias atuais" />
+                <div class="hover-text" style="bottom: 125px !important;">Camisinhas nos dias atuais.
+                </div>
+                <figcaption>Fonte: <a href="https://jc.ne10.uol.com.br/">https://jc.ne10.uol.com.br/</a></figcaption>
+              </figure>
+            </div>
+            <p>Em 1930, acontece a fabricação das primeiras camisinhas descartáveis produzidas a partir do emprego
+              do
+              látex. Na Europa, essa novidade se tornou um sucesso, ao contrário dos Estados Unidos que não obteve os
+              mesmos resultados.
+              Já na década de 60, a impopularidade da camisinha se ampliou com a comercialização das pílulas
+              anticoncepcionais. A popularidade do preservativo só aconteceu por volta do século de 80/90 quando a
+              ação
+              do vírus HIV obrigou milhares de pessoas a se curvarem a um novo processo de educação sexual.</p>
+          </div>
+          <div class="curiosidades">
+            <div class="curio-line">
+              <h2>Curiosidades</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-faq">
+      <div class="faq">
+        <button class="perguntas">
+          1
+          <i class="fa-solid fa-angle-down"></i>
+        </button>
+        <div class="resposta">
+          <p>O Brasil é um dos países que mais adquire camisinhas em todo o mundo. E por isso tem uma indústria
+            própria.
+          </p>
+        </div>
+      </div>
+      <div class="faq">
+        <button class="perguntas">
+          2
+          <i class="fa-solid fa-angle-down"></i>
+        </button>
+        <div class="resposta">
+          <p>O preservativo nacional é 100% produzido com do látex natural das seringueiras da Amazônia.</p>
+        </div>
+      </div>
+      <div class="faq">
+        <button class="perguntas">
+          3
+          <i class="fa-solid fa-angle-down"></i>
+        </button>
+        <div class="resposta">
+          <p>Estima-se que aproximadamente 5 bilhões de camisinhas sejam usadas todos os anos no mundo.</p>
+        </div>
+      </div>
+      <div class="faq">
+        <button class="perguntas">
+          4
+          <i class="fa-solid fa-angle-down"></i>
+        </button>
+        <div class="resposta">
+          <p>No passado, os preservativos eram feitos com as bexigas e os intestinos de ovelhas, cabras e carneiros,
+            e
+            muitos deles eram reutilizáveis.</p>
+        </div>
+      </div>
+      <div class="faq">
+        <button class="perguntas">
+          5
+          <i class="fa-solid fa-angle-down"></i>
+        </button>
+        <div class="resposta">
+          <p>Aproximadamente 40% de todas as camisinhas vendidas no mundo são compradas por mulheres. </p>
+        </div>
+      </div>
+      <div class="faq">
+        <button class="perguntas">
+          6
+          <i class="fa-solid fa-angle-down"></i>
+        </button>
+        <div class="resposta">
+          <p>Durante a Segunda Guerra Mundial, os soldados encontraram uma utilidade inusitada para as camisinhas:
+            eles
+            usavam os preservativos para cobrir os canos dos rifles para evitar a entrada de água salgada no
+            interior
+            da
+            arma. </p>
+        </div>
+      </div>
+      <div class="faq">
+        <button class="perguntas">
+          7
+          <i class="fa-solid fa-angle-down"></i>
+        </button>
+        <div class="resposta">
+          <h1>QUÍMICA</h1>
+          <p>Material básico da camisinha é o látex, que é derivado do látex de borracha natural. O látex contém
+            principalmente carbono © e hidrogênio (H) e é vulcanizado com enxofre (S) para conferir-lhe elasticidade
+            e
+            resistência.
+          </p>
+        </div>
+      </div>
+      <div class="faq">
+        <button class="perguntas">
+          8
+          <i class="fa-solid fa-angle-down"></i>
+        </button>
+        <div class="resposta">
+          <h1>QUÍMICA</h1>
+          <p>Aglicerina, composta por oxigênio (O) e carbono ©, é um dos componentes-chave, atuando como um
+            lubrificante
+            à base de água que não irrita a pele.
+          </p>
+        </div>
+      </div>
+      <div class="faq">
+        <button class="perguntas">
+          9
+          <i class="fa-solid fa-angle-down"></i>
+        </button>
+        <div class="resposta">
+          <h1>QUÍMICA</h1>
+          <p>Para evitar a coagulação do látex e prevenir o crescimento de bactérias, a amônia (NH3) é incorporada.
+            A
+            benzocaína, composta por hidrogênio (H) e nitrogênio (N), é usada como um retardante, bloqueando a
+            condução
+            de impulsos nervosos, contribuindo para o prolongamento da relação sexual.
+          </p>
+        </div>
+      </div>
+      <div class="faq">
+        <button class="perguntas">
+          10
+          <i class="fa-solid fa-angle-down"></i>
+        </button>
+        <div class="resposta">
+          <h1>BIOLOGIA</h1>
+          <img src="./src/images/mapamental.png" />
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+
+
+    <!-- <div class="compostos">
+        <h2>Compostos químicos</h2>
+        <div class="composto-containt">
+          <div class="quimica-card">
+            <img src="" alt="" />
+            <p>askcjsak asnas asnas ashcasd iduewdu aiusa asnsa aijs js uasdh qiu sdcd sadjis c udcsd  csdh iew odss dsudfsd akcnsiusdh weuh we sjd sduhdsao shdaud</p>
+          </div>
+        </div>
+      </div> -->
+
+
+
+    <article>
+      <button class="scrollTop" onclick="backTop()">
+        <img src="src/images/chevron.svg" alt="voltar">
+      </button>
+    </article>
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget();
+    </script>
+    </div>
+  </main>
+  <br>
+  <footer>
+    <div class="footer-content">
+      <h3>PreservaTeen</h3>
+      <p>Esse site é um projeto feito para as matérias de Estudos Avançados em Ciências da Natureza e Laboratórios de
+        Processos Criativos que visa informar e conscientizar o público jovem.</p>
+      <div class="lgtv">
+        <img
+          src="https://s2.glbimg.com/aPPFcq_RGl0Wd1K-6UiFZlJlUWs=/e.glbimg.com/og/ed/f/original/2021/06/10/bandeira_lgbt.png"
+          alt="bandeira LGBTQIAPN+">
+        <p class="happy">Happy Pride Month ❤️</p>
+        <div class="top">
+          <a class="topic" href="sobre.html">Sobre nós</a>
+          <a class="topic" href="fale-conosco.html">Fale conosco</a>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright &copy; 2023. Desenvolvido por <span>Gabrielly</span> e <span>Nicolas</span></p>
+    </div>
+  </footer>
+  <!-- <script src="./src/js/script.js"> </script>
+  <script src="./src/js/navbar.js"> </script>
+  <script src="https://kit.fontawsome.com/998c60ef77.js" crossorigin="anonymous"></script>
+  <script src="./src/js/lightmode.js"></script> -->
+
+  <script src="./src/js/script.js"> </script>
+  <script src="https://kit.fontawsome.com/998c60ef77.js" crossorigin="anonymous"></script>
+  <script src="./src/js/lightmode.js"></script>
+  <script src="./src/js/navbar.js"></script>
+  <script src="./src/js/increase.js"></script>
+  <script src="./src/js/sintetizador.js"></script>
+  <script>
+    var acc = document.getElementsByClassName("perguntas");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        this.parentElement.classList.toggle("active");
+
+        var resposta = this.nextElementSibling;
+
+        if (resposta.style.display === "block") {
+          resposta.style.display = "none";
+        } else {
+          resposta.style.display = "block";
+        }
+      });
+    }
+  </script>
+
+</body>
+
+</html>

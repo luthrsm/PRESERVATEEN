@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./src/css/navbar.css" />
+  <link rel="stylesheet" type="text/css" href="./src/css/historia.css" />
+  <link rel="stylesheet" type="text/css" href="./src/css/scrollTop.css" />
+  <link rel="stylesheet" type="text/css" href="./src/css/footer.css" />
+  <link rel="stylesheet" type="text/css" href="./src/css/home.css" />
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"
+    integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://kit.fontawesome.com/ebbc1aa60f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>PreservaTeen</title>
+</head>
+
+<body>
+  <nav>
+    <header>
+      <div class="logo_text">
+        <span>
+          <img src='.\src/images/camisinha_logo.jpeg' class="mr-cam" id="mr-camisinha"
+            style="height: 50px; width: 50px; background-color: transparent;">
+          <p>PreservaTeen</p>
+        </span>
+      </div>
+
+      <ul class="navigation">
+        <li><a href="home.html" class="white">Home</a></li>
+        <li><a href="index.html" class="blue">História</a></li>
+        <li><a href="comousar.html" class="pink">Preservativos</a>
+          <ul class="dropdown-content preservativo">
+            <li><a href="comousar.html" class="pink">Como Usar</a>
+            <li><a href="jogo.html" class="grey"> Jogo</a></li>
+            <li><a href="comousar.html#ondeconseguir" class="green">Onde conseguir?</a></li>
+          </ul>
+        </li>
+        <li><a href="ist.html" class="yellow">IST'S</a></li>
+        <li>
+        <li><a href="intervencao.html" class="purple-t"><i class="fa-solid fa-ellipsis"></i></a>
+          <ul class="dropdown-content inter">
+            <li><a href="cartilha.html" class="green-t">Cartilha</a></li>
+            <li><a href="hq.html" class="pink">HQ</a></li>
+            <li><a href="intervencao.html" class="blue">Intervenção</a></li>
+            <li><a href="faq.html" class="ciano-t">FAQ</a></li>
+            <li><a href="referencias.html" class="green">Mais</a></li>
+          </ul>
+        </li>
+
+      </ul>
+      <div class="hamburger">
+        <i class="fa-solid fa-bars on" id="on"></i>
+      </div>
+      <div class="alert">
+        <ul class="navigation1">
+          <i class='bx bxs-x-circle close'></i>
+          <li><a href="home.html" class="white">
+              <p>Home</p>
+            </a></li>
+          <li><a href="index.html" class="blue">
+              <p>História</p>
+            </a></li>
+          <li><a href="comousar.html" class="pink">
+              <p>Como Usar</p>
+            </a>
+          <li><a href="jogo.html" class="grey">
+              <p>Jogo</p>
+            </a></li>
+          <li><a href="comousar.html#ondeconseguir" class="green">
+              <p>Onde conseguir?</p>
+            </a></li>
+          </li>
+          <li><a href="ist.html" class="yellow">
+              <p>IST'S</p>
+            </a></li>
+          <li><a href="intervencao.html" class="purple-t">
+              <p>Intervenção</p>
+            </a></li>
+          <li><a href="cartilha.html" class="green-t">
+              <p>Cartilha</p>
+            </a></li>
+          <li><a href="hq.html" class="ciano-t">
+              <p>HQ</p>
+            </a></li>
+          </li>
+          <li><a href="faq.html" class="orange">
+              <p>FAQ</p>
+            </a></li>
+          <li><a href="referencias.html" class="green">Mais</a></li>
+
+        </ul>
+
+      </div>
+      <div class="light-mode">
+        <input type="checkbox" class="checkbox" id="chk" />
+        <label class="label" for="chk">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <div class="ball"></div>
+        </label>
+      </div>
+
+    </header>
+
+  </nav>
+  <main>
+    <div class="cont-parallax">
+      <section class="module parallax" style="background-image: url(../src/images/fundo-home.png);">
+        <span class="logo_text">
+          <h1>Preservateen</h1>
+        </span>
+      </section>
+
+      <section class="module content">
+        <div class="text-container">
+          <div class="home-h2">
+            <h2> Sejam bem-vindos (as) ao PRESERVATEEN!! </h2>
+          </div>
+          <p>  O PRESERVATEEN foi criado, com o intuito de ajudar a população jovem a compreender melhor sobre a educação sexual e como se comportar perante tais situções durante a relação sexual.
+           Nossa prioridade máxima é desmistificar o estigma que envolve esse tema, encorajando indivíduos a engajarem em diálogos sérios e a adotarem práticas seguras durante as suas relações.</p>
+          <p> </p>
+        </div>
+      </section>
+    </div>
+
+    <article>
+      <button class="scrollTop" onclick="backTop()">
+        <img src="src/images/chevron.svg" alt="voltar">
+      </button>
+    </article>
+
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget();
+    </script>
+  </main>
+  <script src="https://kit.fontawsome.com/998c60ef77.js" crossorigin="anonymous"></script>
+  <script src="./src/js/lightmode.js"></script>
+  <script src="./src/js/script.js"> </script>
+  <script src="./src/js/navbar.js"> </script>
+</body>
+
+</html>

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./src/css/cardflip.css" />
+  <link rel="stylesheet" type="text/css" href="./src/css/navbar.css" />
+  <link rel="stylesheet" type="text/css" href="./src/css/historia.css" />
+  <link rel="stylesheet" type="text/css" href="./src/css/footer.css" />
+  <link rel="stylesheet" type="text/css" href="./src/css/carousel.css" />
+  <link rel="stylesheet" type="text/css" href="./src/css/scrollTop.css" />
+  <link rel="stylesheet" type="text/css" href="src/css/passo.css" />
+  <link rel="stylesheet" type="text/css" href="src/css/increase.css" />
+  <link rel="stylesheet" type="text/css" href="src/css/sintetizador.css" />
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"
+    integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+  <script src="./src/js/navbar.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://kit.fontawesome.com/ebbc1aa60f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+
+  <title>PreservaTeen</title>
+
+
+  <style>
+    a {
+      color: #D9583B;
+    }
+
+    a:hover {
+      color: #e86041;
+    }
+
+    a:visited {
+      color: #747F8D;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <header>
+      <div class="logo_text">
+        <span>
+          <img src='.\src/images/camisinha_logo.jpeg' class="mr-cam" id="mr-camisinha"
+            style="height: 50px; width: 50px; background-color: transparent;">
+          <p>PreservaTeen</p>
+        </span>
+      </div>
+
+      <ul class="navigation">
+        <li><a href="home.html" class="white">Home</a></li>
+        <li><a href="index.html" class="blue">História</a></li>
+        <li><a href="comousar.html" class="pink">Preservativos</a>
+          <ul class="dropdown-content preservativo">
+            <li><a href="comousar.html" class="pink">Como Usar</a>
+            <li><a href="jogo.html" class="grey"> Jogo</a></li>
+            <li><a href="comousar.html#ondeconseguir" class="green">Onde conseguir?</a></li>
+          </ul>
+        </li>
+        <li><a href="ist.html" class="yellow">IST'S</a></li>
+        <li>
+        <li><a href="intervencao.html" class="purple-t"><i class="fa-solid fa-ellipsis"></i></a>
+          <ul class="dropdown-content inter">
+            <li><a href="cartilha.html" class="green-t">Cartilha</a></li>
+            <li><a href="hq.html" class="pink">HQ</a></li>
+            <li><a href="intervencao.html" class="blue">Intervenção</a></li>
+            <li><a href="faq.html" class="ciano-t">FAQ</a></li>
+            <li><a href="referencias.html" class="green">Mais</a></li>
+          </ul>
+        </li>
+
+      </ul>
+      <div class="hamburger">
+        <i class="fa-solid fa-bars on" id="on"></i>
+      </div>
+      <div class="alert">
+        <ul class="navigation1">
+          <i class='bx bxs-x-circle close'></i>
+          <li><a href="home.html" class="white">
+              <p>Home</p>
+            </a></li>
+          <li><a href="index.html" class="blue">
+              <p>História</p>
+            </a></li>
+          <li><a href="comousar.html" class="pink">
+              <p>Como Usar</p>
+            </a>
+          <li><a href="jogo.html" class="grey">
+              <p>Jogo</p>
+            </a></li>
+          <li><a href="comousar.html#ondeconseguir" class="green">
+              <p>Onde conseguir?</p>
+            </a></li>
+          </li>
+          <li><a href="ist.html" class="yellow">
+              <p>IST'S</p>
+            </a></li>
+          <li><a href="intervencao.html" class="purple-t">
+              <p>Intervenção</p>
+            </a></li>
+          <li><a href="cartilha.html" class="green-t">
+              <p>Cartilha</p>
+            </a></li>
+          <li><a href="hq.html" class="ciano-t">
+              <p>HQ</p>
+            </a></li>
+          </li>
+          <li><a href="faq.html" class="orange">
+              <p>FAQ</p>
+            </a></li>
+          <li><a href="referencias.html" class="green">Mais</a></li>
+
+        </ul>
+
+      </div>
+      <div class="light-mode">
+        <input type="checkbox" class="checkbox" id="chk" />
+        <label class="label" for="chk">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <div class="ball"></div>
+        </label>
+      </div>
+
+    </header>
+
+  </nav>
+  <main>
+    <div>
+      <div class="curio-line">
+        <h1 class="howUse">SOBRE O PROJETO</h1>
+        <div class="ouca">
+          <button type="button" class="play">
+            <p>ouça aqui</p>
+            <i class="fa-solid fa-play" id="play"></i>
+            <i class="fa-solid fa-pause" id="pause"></i>
+          </button>
+        </div>
+        <div class="aumentar">
+          <div class="bts">
+            <button onclick="FontSize('increase')">
+              <p>A+ </p>
+            </button>
+            <button onclick="FontSize('decrease')">
+              <p>
+                A-
+              </p>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="txt" class="increase">
+
+        <div class="cont-hist">
+          <div class="historia">
+            <p style="margin-bottom: 2rem;"> Nossa missão central é buscar oferecer informações precisas e pertinentes
+              sobre a correta utilização dos
+              preservativos. Nosso propósito é fomentar a consciência - principalmente dos jovens - em relação a sua
+              saúde sexual. Em vista disso, buscamos relacionar nosso projeto com a Agenda 2030 da ONU, e, observar a
+              conexão entre dois objetivos principais: Objetivo 3: Saúde e bem estar e o Objetivo 4:
+              Educação de qualidade. </p>
+
+            <div class="card-cont">
+              <div class="margin-card">
+                <div class="card-flip">
+                  <div class="card__inner" id="card-inner">
+                    <div class="card__face card__face--front">
+                      <img src="./src/images/ods/ODS3-1.jpg" alt="ODS 3 Saúde e Bem-estar" class="ods" />
+                    </div>
+                    <div class="card__face card__face--back">
+                      <div class="card__content">
+                        <div class="card__header">
+                          <img src="./src/images/camisinha_logo.jpeg" alt="logo do site" class="image-flip" />
+                        </div>
+                        <div class="card__body">
+                          <h2>Objetivo 3:</h2>
+                          <p class="ods-p">Saúde e bem-estar: Ao abordarmos sobre a saúde sexual entre os jovens,
+                            estamos diretamente incentivando-os a estarem mais aptos a tarem uma vida sexual mais segura
+                            e protegida de possíveis infecções ou gravidez indesejada. Diminuindo assim, os índices de
+                            IST's e gravidez entre essa comunidade.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-flip">
+                <div class="card__inner" id="card-inner2">
+                  <div class="card__face card__face--front">
+                    <img src="./src/images/ods/ODS4.jpg" alt="ODS 4 Educação de qualidade" class="ods" />
+                  </div>
+                  <div class="card__face card__face--back">
+                    <div class="card__content">
+                      <div class="card__header educacao">
+                        <img src="./src/images/camisinha_logo.jpeg" alt="logo do site" class="image-flip" />
+                      </div>
+                      <div class="card__body">
+                        <h2>Objetivo 4:</h2>
+                        <p class="ods-p">Educação de qualidade: Como já citado anteriormente, muitos jovens não sabem
+                          como utilizar os métodos contraceptivos - inclusive a camisinha - de forma consciente. E tendo
+                          isso em vista, o nosso projeto busca propor a realização de palestras, ou até mesmo, conselhos
+                          comunitários, dentro do âmbito escolar, trazendo assim, uma educação melhor aos jovens, visto
+                          sua tamanha impotância.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p> Desse modo, o grupo realizou um conselho comunitário dentro da nossa comunidade escolar, em busca de
+              aprofundar o nosso tema da melhor forma possível, inclusive entre os jovens. </p>
+          </div>
+        </div>
+
+        <div class="curio-line">
+          <h1 class="howUse">INTERVENÇÃO</h1>
+        </div>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="project-img">
+                <img src="./src/images/intervencao.png" alt="Foto 01">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="project-img">
+                <img src="./src/images/intervencao1.png" alt="Foto 02">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="project-img">
+                <img src="./src/images/intervencao2.png" alt="Foto 03">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="project-img">
+                <img src="./src/images/intervencao3.png" alt="Foto 04">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="project-img">
+                <img src="./src/images/intervencao4.png" alt="Foto 05">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="project-img">
+                <img src="./src/images/intervencao5.png" alt="Foto 06">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="project-img">
+                <img src="./src/images/intervencao6.png" alt="Foto 07">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="project-img">
+                <img src="./src/images/intervencao7.png" alt="Foto 08">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="project-img">
+                <img src="./src/images/intervencao8.png" alt="Foto 09">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="project-img">
+                <img src="./src/images/intervencao9.png" alt="Foto 10">
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="cont-hist">
+          <div class="historia">
+            <p>No dia 01/09/2023 houve a realização do conselho comunitário, na Escola Técnica Estadual de Taboão da
+              Serra. O conselho contou com a participação de aproximadamente 140 alunos, entre os 1° e 2° anos do MTEC
+              de Desenvolvimento de Sistemas. Além disso, nossa intervenção contou com a ajuda dos profissionais da
+              saúde da C.A.S.A do adolescente e da UBS Maria José de Albuquerque.</p>
+            <p> Nossa intervenção, se mostrou bastante prestativa em relação ao tema abordado, dissipando todas as
+              dúvidas - deixadas nas caixinhas de perguntas, ou que foram feitas na hora - pelos estudantes. Por fim,
+              disponibilizamos um formulário como forma de obtermos um feedback dos participantes em relação a
+              intervenção: "Preservativos e IST's". Tivemos no total somente 26 respostas, mas, com esses dados, fomos
+              capazes de analisar a relevância da nossa intervenção para o público alvo. E concluímos, que abordar um
+              tema tão importante quanto esses nas escolas, é algo fundamental e essencial - principalmente, se for
+              acompanhado por especialistas da área - pois, podem ajudar os jovens a tomarem medidas preventivas e
+              seguras durante a relação sexual. </p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="card-carousel">
+          <div class="card" id="1" style="background-image: url('src/images/background.png');">
+            <div class="image-container" style="background-image: url('src/images/card\ 1.png');"></div>
+            <h2>Jennifer Vitória 2ºB</h2>
+            <p>"A intervenção tirou muitas das minhas dúvidas sobre os tipos de prevenção antes, durante ou
+              depois da
+              relação sexual. Tiveram muitos fatos e curiosidades que eu não conhecia em relação aos tipos de
+              prevenção.
+              A intervenção foi muito organizada e bem planejada, só modificaria as imagens explícitas, ou deixaria um
+              aviso prévio.
+              "</p>
+          </div>
+          <div class="card" id="2" style="background-image: url('src/images/background.png');">
+            <div class="image-container" style="background-image: url('src/images/card\ 2.png');"></div>
+            <h2>Hiraku Kawata 1ºB</h2>
+            <p>"O fato dos especialistas terem falado sobre o tema achei muito interessante, já que,
+              principalmente,
+              as
+              informações retiradas da internet nem sempre podemos afirmar que são verdadeiras. Provavelmente existem
+              pessoas que acreditam nas informações falsas e acabam realizando coisas achando que é certo (mas na
+              verdade é errado), então achei importante ter uma fala de profissionais da área."</p>
+          </div>
+          <div class="card" id="3" style="background-image: url('src/images/background.png');">
+            <div class="image-container" style="background-image: url('src/images/card7.png');"></div>
+            <h2>Luiza Yoshida 2ºB</h2>
+            <p>"Excelente! É muito importante que alguém da área da saúde venha em ambientes de maioria jovens
+              palestrar
+              sobre esse tema, principalmente porque muitos adolescentes já começaram a vida sexual"
+            </p>
+          </div>
+          <div class="card" id="4" style="background-image: url('src/images/background.png');">
+            <div class="image-container" style="background-image: url('src/images/card3.png');"></div>
+            <h2>Breno Reis 2ºB</h2>
+            <p>"Achei que a intervenção teve uma proposta interessante e dinâmica, principalmente na parte de
+              responder
+              perguntas
+              "</p>
+          </div>
+          <div class="card" id="5" style="background-image: url('src/images/background.png');">
+            <div class="image-container" style="background-image: url('src/images/card4.png');"></div>
+            <h2>Gabriel Rubio 2ºA</h2>
+            <p>"Perfeita, parabéns!!! Continuem com o trabalho e dedicação em trazer assuntos de extremo tabu
+              e
+              conseguirem abordar com tamanho profissionalismo e empenho.
+              "</p>
+          </div>
+          <div class="card" id="6" style="background-image: url('src/images/background.png');">
+            <div class="image-container" style="background-image: url('src/images/card5.png');"></div>
+            <h2>Anônimo</h2>
+            <p>"Gostei pelo fato de ter sido interativa e ter contribuído para a atribuição de
+              conhecimento aos alunos."
+            </p>
+          </div>
+          <div class="card" id="7" style="background-image: url('src/images/background.png');">
+            <div class="image-container" style="background-image: url('src/images/card6.png');"></div>
+            <h2>Cauê Pereira 1ºA</h2>
+            <p>"Muito útil. O tema é muito importante e deveria ser mais mencionado nas escolas."</p>
+          </div>
+        </div>
+        <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
+      </div>
+      <div class="cont-hist">
+        <div class="historia">
+          <p> Caso você queira saber mais sobre como foi a nossa intervenção, <a href="cartilha.html">acesse a nossa
+              cartilha</a> e aproveite a leitura! </p>
+        </div>
+      </div>
+      <article>
+        <button class="scrollTop" onclick="backTop()">
+          <img src="src/images/chevron.svg" alt="voltar">
+        </button>
+      </article>
+      <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget();
+      </script>
+  </main>
+  <br>
+  <footer>
+    <div class="footer-content">
+      <h3>PreservaTeen</h3>
+      <p>Esse site é um projeto feito para as matérias de Estudos Avançados em Ciências da Natureza e Laboratórios de
+        Processos Criativos que visa informar e conscientizar o público jovem.</p>
+      <div class="lgtv">
+        <img
+          src="https://s2.glbimg.com/aPPFcq_RGl0Wd1K-6UiFZlJlUWs=/e.glbimg.com/og/ed/f/original/2021/06/10/bandeira_lgbt.png"
+          alt="bandeira LGBTQIAPN+" />
+        <p class="happy">Happy Pride Month ❤️</p>
+        <div class="top">
+          <a class="topic" href="sobre.html">Sobre nós</a>
+          <a class="topic" href="fale-conosco.html">Fale conosco</a>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright &copy; 2023. Desenvolvido por <span>Gabrielly</span> e <span>Nicolas</span></p>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./src/js/carousel.js"> </script>
+  <script src="./src/js/script.js"> </script>
+  <script src="https://kit.fontawsome.com/998c60ef77.js" crossorigin="anonymous"></script>
+  <script src="./src/js/lightmode.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <script src="./src/js/navbar.js"></script>
+  <script src="./src/js/increase.js"></script>
+  <script src="./src/js/sintetizador.js"></script>
+  <script src="./src/js/cardflip.js"></script>
+
+</body>
+
+</html>

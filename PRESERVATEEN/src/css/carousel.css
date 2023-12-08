@@ -1,0 +1,260 @@
+.cont-inter {
+  text-align: center;
+  font-size: 30px;
+  margin: 0 auto;
+}
+
+.project-img img {
+  box-shadow: 0 1px 2px #45454533;
+  width: 100%;
+}
+
+.swiper-button-next {
+  margin-right: 10rem;
+}
+
+.swiper-button-prev {
+  margin-left: 10rem;
+}
+
+.swiper {
+  height: 400px;
+  overflow-y: hidden;
+  z-index: 0 !important;
+}
+
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .swiper {
+    padding: 15px;
+    width: 90%;
+    position: relative;
+    left: 0.5rem;
+  }
+
+  .project-img img {
+    width: 550px;
+  }
+
+  .swiper-button-next {
+    margin-right: 1.5rem;
+  }
+
+  .swiper-button-prev {
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+
+  .swiper {
+    position: relative;
+    height: 270px;
+    width: 85%;
+    left: -0.25rem;
+    right: 0.25rem;
+  }
+
+  .project-img {
+
+    overflow-x: hidden;
+  }
+
+  .project-img img {
+    width: 100%;
+  }
+
+
+
+  .swiper-button-prev {
+    margin-left: -10px;
+  }
+
+  .cont-inter {
+    font-size: 1.25rem;
+  }
+}
+
+
+/*comentarios carrossel*/
+
+:root {
+  --card-width: 90%;
+  --card-max-width: 350px;
+  --card-height: 450px;
+  --carousel-min-width: 320px;
+}
+
+.visuallyhidden {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  opacity: 0;
+
+}
+
+.container {
+  overflow: hidden;
+  padding: 20px;
+  margin-top: 2em;
+}
+
+.card-carousel {
+  z-index: 1;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: var(--card-height);
+  min-width: var(--carousel-min-width);
+  transition: filter .3s ease;
+}
+
+@media screen and (max-width: 640px) {
+  .card-carousel {
+    margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2)
+  }
+
+}
+
+.card-carousel.smooth-return {
+  transition: all .2s ease;
+}
+
+.card-carousel .card {
+  background: #e6e6e6;
+  width: var(--card-width);
+  max-width: var(--card-max-width);
+  text-align: center;
+  padding: 1em;
+  min-width: 250px;
+  height: var(--card-height);
+  position: absolute;
+  margin: 0 auto;
+  color: rgba(0, 0, 0, .5);
+  transition: inherit;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 1em;
+  filter: brightness(.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card.highlight {
+  filter: brightness(1)
+}
+
+
+/*.card:nth-of-type(1) .image-container {
+  background-image: url("https://static.addtoany.com/images/dracaena-cinnabari.jpg");
+}
+
+.card:nth-of-type(2) .image-container {
+  background-image: url("https://www.w3schools.com/w3css/img_lights.jpg")
+}
+
+.card:nth-of-type(3) .image-container {
+  background-image: url("https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")
+}
+
+.card:nth-of-type(4) .image-container {
+  background-image: url("https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")
+}
+
+.card:nth-of-type(5) .image-container {
+  background-image: url("https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg")
+}
+
+.card:nth-of-type(6) .image-container {
+  background-image: url("https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg")
+}
+
+.card:nth-of-type(7) .image-container {
+  background-image: url("https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg")
+}*/
+
+.image-container {
+  width: 128px;
+  height: 128px;
+  position: relative;
+  background-size: cover;
+  margin-bottom: 2em;
+  border-radius: 100%;
+  padding: 2em;
+  -webkit-box-shadow: inset 0px 0px 17px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0px 0px 17px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 0px 17px 0px rgba(0, 0, 0, 0.3);
+}
+
+.image-container::after {
+  content: "";
+  display: block;
+  width: 120%;
+  height: 120%;
+  border: solid 3px rgba(0, 0, 0, .1);
+  border-radius: 100%;
+  position: absolute;
+  top: calc(-10% - 3px);
+  left: calc(-10% - 3px);
+}
+
+.card h2 {
+  padding: 1em;
+  text-align: center;
+  color: #000;
+  border-radius: .2em;
+  display: inline-block;
+  font-size: 1.25em;
+}
+
+.card p {
+  color: #525252;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 2px;
+  font-size: 14px;
+  margin-top: -1.5em;
+}
+
+@media screen and (max-width: 425px) {
+
+  .card-carousel {
+    top: 2rem;
+    height: var(--card-height);
+  }
+
+  .container {
+    height: 600px;
+  }
+
+  .image-container {
+    display: none;
+  }
+
+  .card h2 {
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+    font-size: 1.25rem;
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    width: 350px;
+  }
+
+  .card-carousel {
+    left: 0;
+  }
+}

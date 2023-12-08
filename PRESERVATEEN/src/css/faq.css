@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --color-letras-hover: #1b1b1b;
+  --color-letras: #fff;
+  --botao-color: ;
+  --botao-color-hover: ;
+  --cor-fundo: #000;
+  --fonte-letra: 'Poppins', 'sans serif';
+  --cor-rosa: #BF455B;
+}
+
+/*SINTETIZADOR*/
+
+.ouca {
+  left: -10%;
+}
+
+.aumentar {
+  top: 2% !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*pagina faq*/
+
+.container-faq {
+  max-width: 100%;
+  margin: auto;
+}
+
+.titulo-faq h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 10px;
+  margin-top: 2.5rem;
+}
+
+.perguntas,
+.goask {
+  background-color: #747F8D;
+  color: #ebebeb;
+  cursor: pointer;
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 2rem 2.5rem;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  text-align: left;
+}
+
+.perguntas i,
+goask i {
+  font-size: 1.6rem;
+}
+
+.perguntas i:hover,
+.goask i:hover {
+  color: #ebebeb;
+}
+
+.perguntas:hover,
+.goask:hover {
+
+  color: black;
+  transition: all 1.5s ease-out;
+}
+
+.resposta {
+  overflow: hidden;
+  background-color: #AFB5BD;
+  padding: 0 2rem 2.5rem 2rem;
+  display: none;
+}
+
+.resposta p {
+  color: black;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+.faq,
+.askUS {
+  margin: auto;
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.perguntas.active {
+  background-color: #AFB5BD;
+  transition: all 1.5s ease-out;
+  color: black;
+}
+
+.faq.active {
+  border: none;
+}
+
+.askUS a {
+  text-decoration: none;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .container-faq {
+    margin-top: 100px;
+  }
+
+  .titulo-faq h2 {
+    font-size: 45px;
+  }
+
+  .perguntas,
+  .goask {
+    width: 100% !important;
+    font-size: 15px;
+    border: none;
+  }
+
+  .perguntas i,
+  .goask i {
+    font-size: 15px;
+  }
+
+  .resposta {
+    width: 100% !important;
+    padding-top: 7px;
+  }
+
+  .resposta p {
+    font-size: 13px;
+
+  }
+
+}
+
+@media screen and (max-width: 425px) {
+
+  .perguntas,
+  .goask,
+  .resposta {
+    width: 21.875rem !important;
+    margin-left: -4rem;
+  }
+
+  .perguntas,
+  .goask {
+    font-size: 0.8rem;
+  }
+
+  .perguntas i,
+  .goask i {
+    font-size: 15px;
+  }
+
+  .container-faq {
+    margin: .125rem !important;
+  }
+
+  .ouca {
+    top: -10% !important;
+  }
+
+  h1 {
+    font-size: 1.75rem !important;
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+
+  .perguntas,
+  .goask,
+  .resposta {
+    width: 20rem !important;
+    margin-left: -4rem;
+  }
+
+  h1 {
+    font-size: 1.75rem !important;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+
+  h1 {
+    font-size: 1.35rem !important;
+  }
+
+  .perguntas,
+  .goask,
+  .resposta {
+    width: 18rem !important;
+    font-size: .75rem;
+    margin-left: -4rem;
+  }
+
+
+  .resposta p {
+    font-size: .7rem;
+  }
+}
+
+/*enviar perguntas*/
+.cont-mais {
+  display: flex;
+  justify-content: center;
+  margin-top: 6rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.125);
+}
+
+form {
+  background-color: var(--color-letras);
+  width: 400px;
+  height: 600px;
+  color: var(--cor-fundo);
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', sans serif;
+  opacity: 0.8;
+  padding: 4px;
+}
+
+.form-ano {
+  width: 400px;
+  height: 50%;
+}
+
+form h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+form .peg-ano {
+  font-size: 1.6rem;
+}
+
+form input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: #AFB5BD;
+  height: 2rem;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 1.5s ease-out;
+}
+
+form input::placeholder {
+  color: #000
+}
+
+form .lab {
+  margin-top: 10px;
+}
+
+form input,
+textarea,
+a {
+  margin-top: 5px;
+}
+
+form .container-form {
+  margin: 50px;
+}
+
+form textarea {
+  outline: none;
+  resize: none;
+  border: 1.2px solid #1b1b1b;
+  padding: 12px;
+  font-size: 0.9rem;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.faca {
+  text-decoration: underline;
+  font-size: 0.8rem;
+  color: black;
+}
+
+.faca:hover {
+  cursor: pointer;
+  color: #465793;
+  transition: all 1s ease-out;
+}
+
+form button {
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #0d0d0d;
+  color: white;
+  margin-top: 20px;
+  font-size: 19px;
+  margin-bottom: 5px;
+}
+
+form button:hover {
+  background-color: #6e6868;
+  cursor: pointer;
+  transition: all 1.2s ease-out;
+}
+
+.fa-solid {
+  /* margin-top: 50px; */
+  font-size: 35px;
+  padding-left: 5px;
+}
+
+.fa-solid:hover {
+  color: #465793;
+  transition: all 0.6s ease-out;
+}
+
+.fafa-ano p:hover {
+  color: #465793;
+  transition: all 0.6s ease-out;
+}
+
+.fafa-ano:hover {
+  color: #465793;
+  transition: all 0.6s ease-out;
+}
+
+.fafa-ano {
+  display: flex;
+  margin-top: 10px;
+}
+
+.fafa-ano p {
+  line-height: 2.5rem;
+  font-size: 20px;
+}
+
+.fafa-ano a {
+  text-decoration: none;
+  color: var(--cor-fundo);
+}
+
+.fafa-ano a:hover {
+  color: #465793;
+  transition: all 0.6s ease-out;
+}
+
+@media screen and (max-width: 425px) {
+  form {
+    width: 350px;
+    height: 600px;
+
+  }
+
+  form .container-form {
+    margin: 20px;
+  }
+
+  .cont-mais {
+    margin-top: 2.5rem;
+  }
+
+  form button {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  form {
+    width: 300px;
+    height: 600px;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+  form {
+    width: 250px;
+    height: 600px;
+  }
+
+  .container-form {
+    margin: 15px !important;
+  }
+
+
+  form button {
+    margin-top: 1rem;
+  }
+}

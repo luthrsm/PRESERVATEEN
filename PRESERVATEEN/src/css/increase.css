@@ -1,0 +1,58 @@
+/*botões de aumentar e diminuir fonte*/
+.aumentar {
+  top: 14%;
+  right: 0;
+  position: absolute;
+
+}
+
+.bts button {
+  border: none;
+  background: #BF8845;
+  color: whitesmoke;
+  width: 30px;
+  height: 30px;
+  border-radius: 10%;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1;
+  margin-left: .5vw;
+}
+
+.bts button p {
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+}
+
+@media screen and (max-width:768px) {
+  .aumentar {
+    top: -25%;
+    right: -35%;
+    display: flex;
+
+  }
+
+  .bts button {
+    margin-left: 1em;
+    margin-right: auto;
+    flex-direction: row-reverse;
+  }
+}
+
+@media screen and (max-width:425px){
+  .aumentar {
+    top: -25%;
+    right: -45%;
+    display: flex;
+
+  }
+}
+
+@media screen and (max-width: 320px){
+  .bts button{
+    width: 25px;
+    height: 25px;
+  }
+}

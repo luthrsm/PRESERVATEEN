@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.title-form h1 {
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.5em;
+  padding-bottom: 15px;
+  position: relative;
+  text-align: left;
+  color: #2a2a2a;
+  font-family: 'poppins', sans-serif;
+  margin-left: 10px;
+  margin-bottom: 35px;
+}
+
+.title-form h1:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  height: 5px;
+  width: 55px;
+  background-color: #2a2a2a;
+}
+
+.title-form height::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  height: 1px;
+  width: 98%;
+  background-color: #2a2a2a;
+}
+
+.box-formulario {
+  width: 35%;
+  height: 50%;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #AFB5BD;
+  padding: 60px 0;
+  border-radius: 10px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-bottom: 30px;
+  transform: translate(-50%, 5%);
+  z-index: 0;
+
+}
+
+.formulario {
+  width: 700px;
+  background: #AFB5BD;
+  padding: 60px 5%;
+  text-align: center;
+}
+
+.formulario span {
+  position: relative;
+  display: flex;
+  margin: 15px 10px;
+}
+
+/*input animado*/
+
+.input-slide {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding: 10px 0 10px 75px;
+  font-family: "poppins", sans;
+  font-size: 23px;
+  font-weight: 400;
+  color: #d2d2d2;
+  background: #fff;
+  border: 0;
+  border-radius: 3px;
+  outline: 0;
+  transition: all .3s ease-in-out;
+}
+
+.input-slide::-webkit-input-placeholder {
+  color: #4c4e4e;
+  font-weight: 300;
+}
+
+.input-slide+label {
+  display: inline-block;
+  position: absolute;
+  transform: translateX(0);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 7px 12px;
+  font-size: 33px;
+  font-weight: 700;
+  border-right: 1px #747F8D solid;
+  background: transparent;
+  color: #d2d2d2;
+  text-align: left;
+  transition: all .3s ease-in-out, color .3s ease-out;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  overflow: hidden;
+}
+
+.input-slide+label:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 100%;
+  bottom: 0;
+  width: 100%;
+  background: #4c4e4e;
+  z-index: -1;
+  transform: translate(0);
+  transition: all .3s ease-in-out;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.input-slide:focus,
+.input-slidev:active {
+
+  color: #4c4e4e;
+  background: #fff;
+  padding: 10px 0 10px 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.input-slide:focus::-webkit-input-placeholder,
+.input-slide:active::-webkit-input-placeholder {
+  color: #aaa;
+}
+
+.input-slide:focus+label,
+.input-slide:active+label {
+  color: #fff;
+  transform: translateX(-100%);
+}
+
+.input-slide:focus+label:after,
+.input-slide:active+label:after {
+
+  background: #4c4e4e;
+  transform: translate(100%);
+}
+
+/*TextArea*/
+.textarea-slide {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding: 10px 0 10px 75px;
+  font-family: "poppins", sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+  color: #d2d2d2;
+  background: #ffffff;
+  border: 0;
+  resize: none;
+  border-radius: 3px;
+  outline: 0;
+  transition: all .3s ease-in-out;
+}
+
+.textarea-slide::-webkit-input-placeholder {
+  color: #4c4e4e;
+  font-weight: 300;
+}
+
+.textarea-slide+label {
+  display: inline-block;
+  position: absolute;
+  transform: translateX(0);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 7px 12px;
+  font-size: 33px;
+  font-weight: 700;
+  border-right: 1px #747F8D solid;
+  background: transparent;
+  color: #d2d2d2;
+  text-align: left;
+  transition: all .3s ease-in-out, color .3s ease-out;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  overflow: hidden;
+}
+
+.textarea-slide+label:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 100%;
+  bottom: 0;
+  width: 100%;
+  background: #BF455B;
+  z-index: -1;
+  transform: translate(0);
+  transition: all .3s ease-in-out;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.textarea-slide:focus,
+.textarea-slide:active {
+
+  color: #4c4e4e;
+  background: #fff;
+  padding: 10px 0 10px 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.textarea-slide:focus::-webkit-input-placeholder,
+.textarea-slide:active::-webkit-input-placeholder {
+  color: #aaa;
+}
+
+.textarea-slide:focus+label,
+.textarea-slide:active+label {
+  color: #fff;
+  transform: translateX(-100%);
+}
+
+.textarea-slide:focus+label:after,
+.textarea-slide:active+label:after {
+
+  background: #4c4e4e;
+  transform: translate(100%);
+}
+
+/*Botão*/
+.box-btn {
+  width: 100%;
+  padding: 0 10px;
+  float: left;
+}
+
+.btn-envia {
+
+  padding: 1em 2em;
+  cursor: pointer;
+  border: none;
+  background-color: #747F8D;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #fff;
+  border-radius: 3px;
+  width: 100%;
+  font-family: 'poppins', sans-serif;
+  text-transform: capitalize;
+}
+
+.zoom-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+
+.zoom-shadow:hover,
+.zoom-shadow:focus,
+.zoom-shadow:active {
+
+  box-shadow: 0 13px 8px -8px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+@media screen and (max-width:1024px) {
+  .box-formulario {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .box-formulario {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width:425px) {
+  .box-formulario {
+    width: 90%;
+  }
+}

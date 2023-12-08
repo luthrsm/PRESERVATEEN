@@ -1,0 +1,156 @@
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  width: 80vh;
+  margin: 1.6em auto 0.9em auto;
+  position: relative;
+}
+
+.cont-carrosel {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  font-size: 30px;
+  margin-bottom: 2rem;
+}
+
+/*botao de download*/
+
+.download {
+  z-index: 1;
+  position: relative;
+  top: 28em;
+}
+
+.btn {
+  border: none;
+  font-family: 'Poppins';
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 25px 80px;
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* Pseudo elements for icons */
+.btn:before {
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+/* Icon separator */
+.btn-sep {
+  padding: 25px 60px 25px 120px;
+}
+
+.btn-sep:before {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.btn-4 {
+  background: #D9583B;
+  color: #fff;
+}
+
+.btn-4:hover {
+  background: #dd6146;
+}
+
+.btn-4:active {
+  background: #dd6146;
+  top: 2px;
+}
+
+.btn-4:before {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  line-height: 3;
+  font-size: 140%;
+  width: 60px;
+}
+
+.icon-send:before {
+  content: "\f019";
+}
+
+@media screen and(max-width:768px) {
+  .btn-4 {
+    width: 60px;
+    height: 60px;
+    right: 30px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .download {
+    right: 0px;
+    top: 26rem;
+  }
+
+  .cart-container {
+    width: 400px;
+    padding: 2rem !important;
+  }
+
+  iframe {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+  .cont-carrosel {
+    justify-content: center;
+    align-self: center;
+    font-size: 1.25rem;
+    position: relative;
+  }
+
+  .cart-container {
+    width: 355px;
+    padding: 2rem !important;
+  }
+  
+}
+
+@media screen and (max-width: 320px) {
+  .cart-container {
+    width: 300px;
+    padding: 2rem !important;
+  }
+
+  .cont-carrosel {
+    font-size: 1rem;
+  }
+}
